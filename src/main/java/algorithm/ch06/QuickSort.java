@@ -12,10 +12,37 @@ public class QuickSort {
     }
 
     //퀵 정렬
+    /** 1 **/
+//    static void quickSort(int[] a, int left, int right) {
+//        int pl = left;
+//        int pr = right;
+//        int x = a[(pl + pr) / 2];
+//
+//        do{
+//            while (a[pl] < x) pl++;
+//            while (a[pr] > x) pr--;
+//            if(pl <= pr) swap(a, pl++, pr--);
+//        }while(pl <= pr);
+//
+//        if(left < pr) quickSort(a, left, pr);
+//        if(pl < right) quickSort(a, pl, right);
+//    }
+
+    /** 2 **/
     static void quickSort(int[] a, int left, int right) {
         int pl = left;
         int pr = right;
         int x = a[(pl + pr) / 2];
+
+        System.out.println("left : " + left);
+        System.out.println("right : " + right);
+        System.out.println("피벗 : " +  x);
+
+        System.out.printf("a[%d]~a[%d] : {", left, right);
+        for (int i = left; i < right; i++) {
+            System.out.printf("%d, ", a[i]);
+        }
+        System.out.printf("%d}\n", a[right]);
 
         do{
             while (a[pl] < x) pl++;

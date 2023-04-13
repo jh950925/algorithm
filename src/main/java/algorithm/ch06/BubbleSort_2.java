@@ -45,6 +45,5 @@ public class BubbleSort_2 {
             System.out.println("x[" + i + "] : " + x[i]);
         }
     }//end main
-
 }
 

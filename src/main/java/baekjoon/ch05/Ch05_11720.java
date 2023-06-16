@@ -10,9 +10,10 @@ public class Ch05_11720 {
 
         int result = 0;
 
-        for (int i = 0; i < count; i++) {
+        for (int i = 0; i < str.length(); i++) {
             result += str.charAt(i) - '0';
         }
+
 
         System.out.println(result);
         sc.close();

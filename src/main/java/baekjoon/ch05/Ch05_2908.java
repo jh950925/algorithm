@@ -2,7 +2,7 @@ package baekjoon.ch05;
 
 import java.util.Scanner;
 
-public class Ch_2908 {
+public class Ch05_2908 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
